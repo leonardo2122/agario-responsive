@@ -4,7 +4,7 @@ var height = 800;
 var game = new Phaser.Game(width, height, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update });
 var player;
 var bg;
-var map_size = 400;
+var map_size = 4000;
 var balls;
 var player_size = 1;
 var moveBullets;
