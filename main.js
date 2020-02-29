@@ -72,13 +72,13 @@ function update() {
 	var pos2 = player.body.y + (player_size / 2);
         player.reset(map_size - (player_size / 2), pos2);
     }
-    if (player.body.y > map_size - (player_size / 2)) {
+    if (player.body.y > map_size) {
         var pos3 = player.body.x;
-        player.reset(pos3, 0);
+        player.reset(pos3, 50);
     }
     if (player.body.y < -100) {
         var pos4 = player.body.x;
-        player.reset(pos4, map_size - (player_size / 2));
+        player.reset(pos4, map_size - player_size);
     }
 }
 
